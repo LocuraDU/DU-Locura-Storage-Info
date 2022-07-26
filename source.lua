@@ -1,6 +1,6 @@
 -- Code Edits By EricHamby
 -- DU: CredenceH
--- https://github.com/LocuraDU
+-- https://github.com/locuradu
 -- DU-Locura-Storage-Info
 local version = '1.0'
 system.print("----------------------------------------")
@@ -15,8 +15,8 @@ BG_Color = "0F181D" --export: (Default: 0F181D (DU/UI))
 template = [[
 <!-- Code Edits By EricHamby -->
 <!-- DU: CredenceH -->
-<!-- https://github.com/EricHamby/DU-LUA-Scripts -->
-<!-- DU-Basic-Storage-Capacity -->
+<!-- https://github.com/locuradu -->
+<!-- DU-Locura-Storage-Info -->
 <style type="text/css">
 body {
     background-color: #]] .. BG_Color .. [[;
