@@ -5,6 +5,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 
 # Preview
 ![Image of Screen](DU-Basic-Storage-Capacity.png?raw=true)
+![Image of Screen](DU-Basic-Storage-Capacity_Ore.png?raw=true)
 
 # Install
 - Link Programming Board to Screen/Sign, Hub or Container (link order not important).
