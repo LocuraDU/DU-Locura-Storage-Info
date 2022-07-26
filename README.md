@@ -75,14 +75,14 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 > **Note**
 > Please post in Discussions if you can confirm a screen or sign.
 
-- :blue_square: Screen XS
-- :blue_square: Screen S
+- :green_square: Screen XS
+- :green_square: Screen S
 - :green_square: Screen M
-- :blue_square: Screen XL
-- :blue_square: Trans Screen XS
-- :blue_square: Trans Screen S
+- :green_square: Screen XL
+- :green_square: Trans Screen XS
+- :green_square: Trans Screen S
 - :blue_square: Trans Screen M
-- :blue_square: Trans Screen L
+- :green_square: Trans Screen L
 - :blue_square: Sign XS
 - :blue_square: Sign S
 - :blue_square: Sign M
