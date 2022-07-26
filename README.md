@@ -7,7 +7,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 ![Image of Screen](DU-Basic-Storage-Capacity.png?raw=true)
 
 # Install
-- Link Programming Board: Screen & Hub or Container (link order not important).
+- Link Programming Board to Screen/Sign, Hub or Container (link order not important).
 - Copy contents of "config.json" and right click on programming board > Advanced > Paste Lua configuration from clipboard.
 - Edit Lua Parameters: Set Material Name,  Container Size in KL, and Background Color in Hex value without the "#".
 - Turn on Screen & Activate Board.
