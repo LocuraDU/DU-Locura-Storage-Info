@@ -1,7 +1,7 @@
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
 > **Note**
-> Last confirmed compatible game version: 0.31.0
+> Last confirmed compatible game version: 0.31.1
 
 # Preview
 ![Image of Screen](DU-Basic-Storage-Capacity.png?raw=true)
