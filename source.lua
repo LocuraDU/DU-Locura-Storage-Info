@@ -2,14 +2,14 @@
 -- DU: CredenceH
 -- https://github.com/locuradu
 -- DU-Locura-Storage-Info
-local version = '1.0'
+local version = '1.1'
 system.print("----------------------------------------")
 system.print("DU-Locura-Storage-Info version " .. version)
 system.print("GitHub/LocuraDU")
 system.print("----------------------------------------")
 unit.hideWidget()
 Material = "Storage" --export: (Default: Storage) Ore Name
-Volume_Available_KL = "1433" --export: (Default: 1433) Available Volume (KL) in Hub or Container
+Volume_Available_KL = "4300" --export: (Default: 1433) Available Volume (KL) in Hub or Container
 BG_Color = "0F181D" --export: (Default: 0F181D (DU/UI))
 
 template = [[
@@ -21,6 +21,15 @@ template = [[
 body {
     background-color: #]] .. BG_Color .. [[;
     color: white;}
+.header {
+  background-color:rgba(19,31,39,1); 
+  padding: 1vh 0 1vh 5vh;
+  margin-top: 2vh;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.2);
+  font-family: 'Play', sans-serif;
+  font-size: 2vh;
+  color:#b9e6f7;
+  font-weight: bold;}
 table {
     width: 60%;
     margin-left: 20%;
@@ -50,6 +59,7 @@ img {
     background-color: #${color};}
 </style>
 <div style="width: 100%; height: 100%;">
+<div class="header"><b>LOCURA STORAGE INFO v]] .. version .. [[</b></div>
   <table>
     <tr>
       <td class="left">
