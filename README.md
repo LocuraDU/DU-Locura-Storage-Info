@@ -92,7 +92,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 - :blue_square: Sign M
 - :blue_square: Sign L
 - :blue_square: Vertical Sign XS
-- :blue_square: Vertical Sign M
+- :yellow_square: Vertical Sign M
 - :blue_square: Vertical Sign L
 
 # Ways To Help
