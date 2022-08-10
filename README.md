@@ -1,3 +1,6 @@
+> **Note**
+> This was originaly a form from (https://github.com/brendonh/du-lua).
+
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
 > **Note**
