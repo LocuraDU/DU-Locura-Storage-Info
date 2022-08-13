@@ -1,6 +1,6 @@
 > **Note**
-> This was originally an fork from (https://github.com/brendonh).
-> Some aesthetic ideas from (https://github.com/Jericho1060)
+> - This was originally an fork from (https://github.com/brendonh).
+> - Some aesthetic ideas from (https://github.com/Jericho1060)
 
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
