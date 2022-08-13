@@ -115,6 +115,7 @@ Our store is located on Alioth at "::pos{0,2,30.9634,107.0939,47.5806}" only 13k
 
 You may also VR at "Locura Mining Co". 
 
+# Other
 > **Note**
 > - This was originally a fork from (https://github.com/brendonh).
 > - Some aesthetic ideas from (https://github.com/Jericho1060)
