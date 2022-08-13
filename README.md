@@ -5,7 +5,7 @@
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
 > **Note**
-> Last confirmed compatible game version: 0.31.3
+> Last confirmed compatible game version: 0.31.6
 
 > **Warning**
 > Too many screen in an area will hurt game performance. The game will also start throttling back screen quality upon reaching a certain number of screens. Using Animations in screens will make this much worse. Only use a few animated screens in an area for best performance.
