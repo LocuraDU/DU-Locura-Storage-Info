@@ -1,7 +1,3 @@
-> **Note**
-> - This was originally a fork from (https://github.com/brendonh).
-> - Some aesthetic ideas from (https://github.com/Jericho1060)
-
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
 > **Note**
@@ -118,3 +114,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 Our store is located on Alioth at "::pos{0,2,30.9634,107.0939,47.5806}" only 13km from M6. We have territory clusters (flowers) on every planet in game. Right now in store we sale raw ore, mining rigs, and LUA code.
 
 You may also VR at "Locura Mining Co". 
+
+> **Note**
+> - This was originally a fork from (https://github.com/brendonh).
+> - Some aesthetic ideas from (https://github.com/Jericho1060)
