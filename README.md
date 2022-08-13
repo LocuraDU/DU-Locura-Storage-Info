@@ -1,5 +1,5 @@
 > **Note**
-> - This was originally an fork from (https://github.com/brendonh).
+> - This was originally a fork from (https://github.com/brendonh).
 > - Some aesthetic ideas from (https://github.com/Jericho1060)
 
 # Information
