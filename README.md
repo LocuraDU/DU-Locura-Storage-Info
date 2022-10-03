@@ -3,11 +3,21 @@
 
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
-> **Note**
-> Last confirmed compatible game version: 0.31.10
 
-> **Warning**
-> Too many screen in an area will hurt game performance. The game will also start throttling back screen quality upon reaching a certain number of screens. Using Animations in screens will make this much worse. Only use a few animated screens in an area for best performance.
+[![](https://img.shields.io/badge/DU-1.0.3-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
+[![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
+[![](https://img.shields.io/badge/VERSION-v1.1-green?style=for-the-badge)](#)
+---
+[![](https://img.shields.io/github/issues/locuradu/DU-Locura-Storage-Info?style=flat-square&label=ISSUES)](#)
+[![](https://img.shields.io/github/issues-closed/locuradu/DU-Locura-Storage-Info?style=flat-square&label=ISSUES)](#)
+[![](https://img.shields.io/github/watchers/locuradu/DU-Locura-Storage-Info?style=flat-square&label=WATCHERS)](#)
+[![](https://img.shields.io/github/stars/locuradu/DU-Locura-Storage-Info?style=flat-square&label=STARS)](#)
+[![](https://img.shields.io/github/forks/locuradu/DU-Locura-Storage-Info?style=flat-square&label=FORKS)](#)
+[![](https://img.shields.io/github/commit-activity/m/locuradu/DU-Locura-Storage-Info?style=flat-square&label=COMMIT%20ACTIVITY)](#)
+[![](https://img.shields.io/github/discussions/locuradu/DU-Locura-Storage-Info?label=DISCUSSIONS&style=flat-square)](#)
+[![](https://img.shields.io/github/last-commit/locuradu/DU-Locura-Storage-Info?label=LAST%20COMMIT&style=flat-square)](#)
+[![](https://img.shields.io/github/contributors/locuradu/DU-Locura-Storage-Info?label=CONTRIBUTORS&style=flat-square)](#)
+[![](https://img.shields.io/github/releases/locuradu/DU-Locura-Storage-Info?label=RELEASES&style=flat-square)](#)
 
 # Preview
 ![Image of Screen](DU-Basic-Storage-Capacity.png?raw=true)
@@ -103,22 +113,19 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 - Donate for Dr Pepper funds at Venmo @terranbytes
 - Join or start a discussion on the discussions tab
 
-# In Game
-- CredenceH
-- Locura
-- NoobTheory
+# Locura Mods
+Locura Mods develops mods for multiple games including Dual Universe, The Sims 4, Farming Simulator 22, Cities: Skylines, and Scrap Mechanic. We also have multiple organizations set up in Dual Universe.
 
-# Organization
-"Locura Mining Co" is a mining only org that also serves as a hub for our LUA code, mining rig sales, and raw ore sales. We also buy all ore. join today for help and free equipment for mining.
+"Locura Mining Co" is a mining only org that also serves as a hub for our LUA code, mining rig sales, and raw ore sales. We also buy all ore. Join today for help and free equipment for mining.
 
-"Locura Property Managment" is an organization that rents territories for mining or other uses. Fees are due on a pre determined bases that fits your play times. Fees are payable in Ore, Quanta, or anything else of value. 
+"Locura Property Management" is an organization that rents territories for mining or other uses. Fees are due on a pre-determined basis that fits your play times. Fees are payable in Ore, Quanta, or anything else of value.
 
-# In Game Location
-Our store is located on Alioth at "::pos{0,2,30.9634,107.0939,47.5806}" only 13km from M6. We have territory clusters (flowers) on every planet in game. Right now in store we sale raw ore, mining rigs, and LUA code.
-
-You may also VR at "Locura Mining Co". 
+You may also VR to our store in Dual universe at "Locura Mining Co".  
 
 # Other
 > **Note**
 > - This was originally a fork from (https://github.com/brendonh).
 > - Some aesthetic ideas from (https://github.com/Jericho1060)
+
+> **Warning**
+> Too many screen in an area will hurt game performance. The game will also start throttling back screen quality upon reaching a certain number of screens. Using Animations in screens will make this much worse. Only use a few animated screens in an area for best performance.
