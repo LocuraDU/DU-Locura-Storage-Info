@@ -91,36 +91,22 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 :blue_square: Not Tested :green_square: Working :yellow_square: Partially Works Without Edits :red_square: Not Working Without Edits
 > **Note**
 > Please post in Discussions if you can confirm a screen or sign.
-
-- :green_square: Screen XS
-- :green_square: Screen S
-- :green_square: Screen M
-- :green_square: Screen XL
-- :green_square: Trans Screen XS
-- :green_square: Trans Screen S
-- :blue_square: Trans Screen M
-- :green_square: Trans Screen L
-- :blue_square: Sign XS
-- :blue_square: Sign S
-- :blue_square: Sign M
-- :blue_square: Sign L
-- :blue_square: Vertical Sign XS
-- :green_square: Vertical Sign M
-- :blue_square: Vertical Sign L
+- :green_square: Screens
+- :green_square: Modern Screens
+- :green_square: Transparent Screens
+- :green_square: Modern Treanparent Screens
+- :blue_square: Sings
+- :blue_square: Vertical Signs
 
 # Ways To Help
 - Contribute new code, or updating whats already here
 - Donate for Dr Pepper funds at Venmo @terranbytes
 - Join or start a discussion on the discussions tab
 
-# Locura Mods
-Locura Mods develops mods for multiple games including Dual Universe, The Sims 4, Farming Simulator 22, Cities: Skylines, and Scrap Mechanic. We also have multiple organizations set up in Dual Universe.
-
-"Locura Mining Co" is a mining only org that also serves as a hub for our LUA code, mining rig sales, and raw ore sales. We also buy all ore. Join today for help and free equipment for mining.
-
-"Locura Property Management" is an organization that rents territories for mining or other uses. Fees are due on a pre-determined basis that fits your play times. Fees are payable in Ore, Quanta, or anything else of value.
-
-You may also VR to our store in Dual universe at "Locura Mining Co".  
+# In Game
+- CredenceH (Dual Universe)
+- Locura (Dual Universe)
+- NoobTheory (Dual Universe)
 
 # Other
 > **Note**
