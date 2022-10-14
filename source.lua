@@ -1,7 +1,10 @@
--- Code Edits By EricHamby
+-- Code Edits By CredenceHamby
 -- DU: CredenceH
 -- https://github.com/locuradu
 -- DU-Locura-Storage-Info
+-- This was originally a fork from (https://github.com/brendonh).
+-- Some aesthetic ideas from (https://github.com/Jericho1060)
+
 local version = '1.1'
 system.print("----------------------------------------")
 system.print("DU-Locura-Storage-Info version " .. version)
@@ -13,10 +16,6 @@ Volume_Available_KL = "4300" --export: (Default: 1433) Available Volume (KL) in 
 BG_Color = "0F181D" --export: (Default: 0F181D (DU/UI))
 
 template = [[
-<!-- Code Edits By EricHamby -->
-<!-- DU: CredenceH -->
-<!-- https://github.com/locuradu -->
-<!-- DU-Locura-Storage-Info -->
 <style type="text/css">
 body {
     background-color: #]] .. BG_Color .. [[;
