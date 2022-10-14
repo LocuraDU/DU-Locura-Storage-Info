@@ -94,8 +94,8 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 - :green_square: Screens
 - :green_square: Modern Screens
 - :green_square: Transparent Screens
-- :green_square: Modern Treanparent Screens
-- :blue_square: Sings
+- :green_square: Modern Transparent Screens
+- :blue_square: Signs
 - :blue_square: Vertical Signs
 
 # Ways To Help
