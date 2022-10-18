@@ -2,7 +2,7 @@
 :---: | :---
 
 # Information
-Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
+Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element. 
 
 [![](https://img.shields.io/badge/DU-1.0.7-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
@@ -28,9 +28,6 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 - Copy contents of "config.json" and right click on programming board > Advanced > Paste Lua configuration from clipboard.
 - Edit Lua Parameters: Set Material Name,  Container Size in KL, and Background Color in Hex value without the "#".
 - Turn on Screen & Activate Board.
-
-> **Warning**
-> This may or may not work with some screens or signs. Please check list below.
 
 # Optional
 - Link relay to programming boards then link pressure tile or detector to relay (forces update when standing on pressure tile)
@@ -112,6 +109,9 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 > **Note**
 > - This was originally a fork from (https://github.com/brendonh).
 > - Some aesthetic ideas from (https://github.com/Jericho1060)
+
+> **Warning**
+> This may or may not work with some screens or signs. Please check list above for compatibility.
 
 > **Warning**
 > Too many screen in an area will hurt game performance. The game will also start throttling back screen quality upon reaching a certain number of screens. Using Animations in screens will make this much worse. Only use a few animated screens in an area for best performance.
