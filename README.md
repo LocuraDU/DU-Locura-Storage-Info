@@ -4,7 +4,7 @@
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element.
 
-[![](https://img.shields.io/badge/DU-1.0.6-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
+[![](https://img.shields.io/badge/DU-1.0.7-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
 [![](https://img.shields.io/badge/VERSION-v1.1-green?style=for-the-badge)](#)
 ---
