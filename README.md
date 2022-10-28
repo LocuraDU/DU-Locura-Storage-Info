@@ -1,10 +1,10 @@
-:heavy_exclamation_mark: | As of release 1.0 HTML on screens and signs is off by default. You will need to enter settings and enable them. Code is being updated.
+:heavy_exclamation_mark: | HTML on screens and signs is off by default. You will need to enter settings and enable them.
 :---: | :---
 
 # Information
 Display for T1-T5 ores, minerals, general storage, and gasses. Will show the icon of selected element. 
 
-[![](https://img.shields.io/badge/DU-1.0.7-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
+[![](https://img.shields.io/badge/DU-1.0.10-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
 [![](https://img.shields.io/badge/VERSION-v1.1-green?style=for-the-badge)](#)
 ![](https://komarev.com/ghpvc/?username=DU-Locura-Storage-Info&style=for-the-badge)
