@@ -4,11 +4,12 @@
 -- DU-Locura-Storage-Info
 -- This was originally a fork from (https://github.com/brendonh).
 -- Some aesthetic ideas from (https://github.com/Jericho1060)
-Material = "Storage" --export: (Default: Storage) Ore Name
-Volume_Available_KL = "716" --export: (Default: 1433) Available Volume (KL) in Hub or Container
+local Material = "Storage" --export: (Default: Storage) Ore Name
 local BG_Color = "15/255,24/255,29/255" --export: (Default: 15/255,24/255,29/255 (DU/UI))
+local WallPaper = "assets.prod.novaquark.com/130546/b6fc96cb-c570-4554-901f-099711f5383d.jpg" --export: Wallpapper Image
+local UseWallpaper = false --export: Uses wallpaper
 local HideUnit = true --export: Hides the bottom right widget
-local showHeaderBar = true --export: Header Bar - true/false
+local showJericoBar = true --export: Header Bar - true or false
 local showinKL = false --export: Show in KL or L
 local version = '2.0'
 system.print("----------------------------------------")
@@ -22,30 +23,41 @@ local json = require('dkjson')
 local rx,ry = getResolution()
 local x,borderSpacing=10,4
 local from_side = rx*0.05
+
 local background = createLayer()
 local back = createLayer()
 local front = createLayer()
-setBackgroundColor(]] .. BG_Color .. [[)
-local heading=loadFont('Montserrat-Bold',60)
+
+local heading=loadFont('Montserrat-Bold',75)
 local small=loadFont('Play',14)
 local smallBold=loadFont('Play-Bold',18)
 local subtext=loadFont('Play', 8)
 local large=loadFont('Play', 60)
 local kindalarge=loadFont('Play', 100)
 local kindasmall=loadFont('Play', 40)
+
+
+local WallPaperIMG = loadImage(']]..WallPaper..[[')
 local catName = string.upper('${Material}')
 local KLVolume = '${volume}'
 local LVolume = '${currentVolume}'
 local percent = '${percent}'
-local iconImage=loadImage('${pureName}')
-local color=color
-local headBar = ]] .. tostring(showHeaderBar) .. [[
-local KorKL = ]] .. tostring(showinKL) .. [[
+local iconImage = loadImage('${pureName}')
+local color = color
+
+local JericoBar=]]..tostring(showJericoBar)..[[
+
+local KorKL=]]..tostring(showinKL)..[[
+
+local UseWall=]]..tostring(UseWallpaper)..[[
+
+if UseWall then addImage(background,WallPaperIMG,0,0,rx,ry) 
+  else setBackgroundColor(]] .. BG_Color .. [[) end
 
 function drawDoubleLine(layer,x,y,rx,space)
     addLine(layer,x,y,rx-x,y)
     addLine(layer,x,y+space,rx-x,y+space) 
-end 
+end
 
 setDefaultStrokeColor(back,Shape_Line,0,0,0,0.5)
 setDefaultShadow(back,Shape_Line,6,0,0,0,0.5)
@@ -54,38 +66,45 @@ setDefaultFillColor(front,Shape_Text,0,0,0,1)
 setDefaultFillColor(front,Shape_Box,0.075,0.125,0.156,1)
 setDefaultFillColor(front,Shape_Text,0.710,0.878,0.941,1)
 
+
 function renderHeader(title)
     local h_factor=12
     local h=35
     addLine(back,0,h+12,rx,h+12)
     addBox(front,0,12,rx,h)
     addText(front,smallBold,title,44,35)
-    addText(front,small,'v]] .. version .. [[',rx-150,35)
+    addText(front,small,'v]] .. version .. [[',rx-100,35)
 end
 
-if headBar == true then renderHeader('Locura Storage Info') end
-addImage(background,iconImage,140,50,250,250)
-addText(front,heading,catName,450,200)
+
+
+if JericoBar == true then 
+ renderHeader('Locura Storage Info')
+end
+
+
+
+addImage(back,iconImage,370,60,250,250)
+addText(front,heading,catName,50,570)
 setDefaultStrokeColor(back,Shape_Line,1,1,1,0.5) 
 setDefaultStrokeWidth(back,Shape_Line,0.001) 
 drawDoubleLine(back,x,380,rx,borderSpacing)
 setNextFillColor(front,${color},1)
-setNextTextAlign(front,AlignH_Right,AlignV_Bottom)
+setNextTextAlign(front,AlignH_Right,AlignV_Baseline)
 
 if KorKL == true then 
-addText(front,large,KLVolume,620,290)
+ addText(front,large,KLVolume,935,570)
 else
-addText(front,large,LVolume,620,290)
+ addText(front,large,LVolume,960,570)
 end
-setNextFillColor(front,117/255,146/255,156/255,1)
-addText(front,kindalarge,'/',620,300)
+
+setNextFillColor(front,51/255,60/255,74/255,1)
 
 if KorKL == true then 
-addText(front,kindasmall,'KL',660,300)
+ addText(front,kindasmall,'KL',930,570)
 else
-addText(front,kindasmall,'L',660,300)
+ addText(front,kindasmall,'L',955,570)
 end
-
 
 setDefaultFillColor(back,Shape_Box,0.075,0.125,0.156,1)
 setDefaultFillColor(front,Shape_Box,${color},1)
