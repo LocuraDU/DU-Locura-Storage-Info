@@ -24,6 +24,9 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 ![Image of Screen](img/DU-Basic-Storage-Capacity.png?raw=true)
 ![Image of Screen](img/DU-Basic-Storage-Capacity-Ore.png?raw=true)
 
+# Edit Code
+[![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
+
 # Install
 - Link Programming Board to Screen/Sign, Hub or Container (link order not important).
 - Copy contents of "config.json" and right click on programming board > Advanced > Paste Lua configuration from clipboard.
