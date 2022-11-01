@@ -21,8 +21,8 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 [![](https://img.shields.io/github/releases/locuradu/DU-Locura-Storage-Info?label=RELEASES&style=flat-square)](#)
 
 # Preview
-![Image of Screen](DU-Basic-Storage-Capacity.png?raw=true)
-![Image of Screen](DU-Basic-Storage-Capacity-Ore.png?raw=true)
+![Image of Screen](img/DU-Basic-Storage-Capacity.png?raw=true)
+![Image of Screen](img/DU-Basic-Storage-Capacity-Ore.png?raw=true)
 
 # Install
 - Link Programming Board to Screen/Sign, Hub or Container (link order not important).
