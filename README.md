@@ -19,10 +19,11 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 [![](https://img.shields.io/github/last-commit/locuradu/DU-Locura-Storage-Info?label=LAST%20COMMIT&style=flat-square)](#)
 [![](https://img.shields.io/github/contributors/locuradu/DU-Locura-Storage-Info?label=CONTRIBUTORS&style=flat-square)](#)
 [![](https://img.shields.io/github/releases/locuradu/DU-Locura-Storage-Info?label=RELEASES&style=flat-square)](#)
+[![](https://img.shields.io/github/repo-size/LocuraDU/DU-Locura-Storage-Info?label=REPO%20SIZE&style=flat-square)](#)
+[![](https://img.shields.io/github/license/LocuraDU/DU-Locura-Storage-Info?label=LICENSE&style=flat-square)](#)
 
 # Preview
-![Image of Screen](img/DU-Basic-Storage-Capacity.png?raw=true)
-![Image of Screen](img/DU-Basic-Storage-Capacity-Ore.png?raw=true)
+<img src="img/DU-Basic-Storage-Capacity.png" height="300" width="400"><img src="img/DU-Basic-Storage-Capacity-Ore.png" height="300" width="400">
 
 # Wiki
 [![](https://img.shields.io/badge/Wiki-Changelog-yellow?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Changelog)
@@ -43,8 +44,12 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 
 # Current Parameter Options
 - Material ( See "Item Compatibility" )
-- Volume Available in kL
-- BG Color
+- Background Color
+- Wallpaper URL
+- Use Wallpaper
+- Hide Screen Widget
+- Show/Hide JericoBar
+- Use "L" or "KL"
 
 # Item Compatibility
 - :green_square: Storage (Shows Container Icon For General Use)
