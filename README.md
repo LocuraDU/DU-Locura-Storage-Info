@@ -23,7 +23,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 [![](https://img.shields.io/github/license/LocuraDU/DU-Locura-Storage-Info?label=LICENSE&style=flat-square)](#)
 
 # Preview
-![v2.0](img/DULSI2.png)
+![v2.0](img/DULSI2Banner.png)
 
 # Wiki
 [![](https://img.shields.io/badge/Wiki-Changelog-yellow?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Changelog)
