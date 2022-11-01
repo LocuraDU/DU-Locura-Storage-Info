@@ -6,7 +6,7 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 
 [![](https://img.shields.io/badge/DU-1.0.10-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
-[![](https://img.shields.io/badge/VERSION-v1.1-green?style=for-the-badge)](#)
+[![](https://img.shields.io/badge/VERSION-v2.0-green?style=for-the-badge)](#)
 ![](https://komarev.com/ghpvc/?username=DU-Locura-Storage-Info&style=for-the-badge)
 ---
 [![](https://img.shields.io/github/issues/locuradu/DU-Locura-Storage-Info?style=flat-square&label=ISSUES)](#)
@@ -23,6 +23,11 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 # Preview
 ![Image of Screen](img/DU-Basic-Storage-Capacity.png?raw=true)
 ![Image of Screen](img/DU-Basic-Storage-Capacity-Ore.png?raw=true)
+
+# Wiki
+[![](https://img.shields.io/badge/Wiki-Changelog-yellow?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Changelog)
+[![](https://img.shields.io/badge/Wiki-Installation-informational?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Installation)
+[![](https://img.shields.io/badge/Wiki-Usage-informational?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Usage)
 
 # Edit Code
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
@@ -111,8 +116,9 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 
 # Other
 > **Note**
-> - This was originally a fork from (https://github.com/brendonh).
-> - Some aesthetic ideas from (https://github.com/Jericho1060)
+> - This was originally a fork from (https://github.com/DorianTheGrey).
+> - Also Based on work by (https://github.com/paulheu).
+> - Also Based on work by (https://github.com/Jericho1060).
 
 > **Warning**
 > This may or may not work with some screens or signs. Please check list above for compatibility.
