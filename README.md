@@ -1,4 +1,4 @@
-:heavy_exclamation_mark: | v2.0+ No Longer Contains Any HTML.
+:heavy_exclamation_mark: | v2.0+ No Longer Contains Any HTML. No Need To Adjust Game Settings.
 :---: | :---
 
 # Information
