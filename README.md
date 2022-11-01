@@ -33,12 +33,6 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 # Edit Code
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
-# Install
-- Link Programming Board to Screen/Sign, Hub or Container (link order not important).
-- Copy contents of "config.json" and right click on programming board > Advanced > Paste Lua configuration from clipboard.
-- Edit Lua Parameters: Set Material Name,  Container Size in KL, and Background Color in Hex value without the "#".
-- Turn on Screen & Activate Board.
-
 # Optional
 - Link relay to programming boards then link pressure tile or detector to relay (forces update when standing on pressure tile)
 
