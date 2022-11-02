@@ -33,9 +33,6 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 # Edit Code
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
-# Optional
-- Link relay to programming boards then link pressure tile or detector to relay (forces update when standing on pressure tile)
-
 # Current Parameter Options
 - Material ( See "Item Compatibility" )
 - Background Color
