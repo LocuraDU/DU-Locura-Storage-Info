@@ -83,7 +83,6 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 - :green_square: Titanium
 - :green_square: Rhodonite
 - :green_square: Manganese
-- :green_square: Trithorium
 - :green_square: Vanadinite
 - :green_square: Vanadium
 - :green_square: Hydrogen
