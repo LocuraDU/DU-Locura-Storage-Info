@@ -1,8 +1,13 @@
 Material = "Storage" --export: (Default: Storage) Ore Name
+itemID = 1866812055 --export: Enter the item ID found at du-lua.dev/#/items
 BG_Color = "15/255,24/255,29/255" --export: (Default: 15/255,24/255,29/255 (DU/UI))
 WallPaper = "assets.prod.novaquark.com/130546/b6fc96cb-c570-4554-901f-099711f5383d.jpg" --export: Wallpapper Image
+oreValue = '25' --export: Value of ore you want to calculate
+showValue = true --export: Show the total value of your ore
 UseWallpaper = false --export: Uses wallpaper
 HideUnit = true --export: Hides the bottom right widget
+HideTier = false --export: Hides the items tier
+HideGitHub = false --export: Hides GitHub link credit
 showJericoBar = true --export: Header Bar - true or false
 showinKL = false --export: Show in KL or L
 version = '2.1'
