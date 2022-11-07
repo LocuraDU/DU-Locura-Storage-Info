@@ -1,7 +1,7 @@
 -- DU-Locura-Storage-Info
 -- Information / Updates / Downloads: GitHub/LocuraDU 
--- Code: GitHub/LocuraDU & GitHub.com/brendonh
--- Design: GitHub/LocuraDU & GitHub.com/Jericho1060
+-- Code: GitHub/LocuraDU & GitHub/brendonh
+-- Design: GitHub/LocuraDU & GitHub/Jericho1060
 -- Info: LocuraDU is a mod hub for many games by GitHub/CredenceHamby
 -- Built using the wonderful tools at https://du-lua.dev/
 -- Love With Your Heart, Use Your Head For Everything Else - Captain Disillusion
