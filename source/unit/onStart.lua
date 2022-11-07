@@ -3,12 +3,14 @@
 -- Code: GitHub/LocuraDU & GitHub.com/brendonh
 -- Design: GitHub/LocuraDU & GitHub.com/Jericho1060
 -- Info: LocuraDU is a mod hub for many games by GitHub/CredenceHamby
+-- Built using the wonderful tools at https://du-lua.dev/
 -- Love With Your Heart, Use Your Head For Everything Else - Captain Disillusion
 
 system.print("----------------------------------------")
 system.print("DU-Locura-Storage-Info version " .. version)
 system.print("GitHub/LocuraDU")
 system.print("----------------------------------------")
+
 if HideUnit then unit.hideWidget() end
 
 config = {}
@@ -17,7 +19,7 @@ function configure()
       config.screen = slot1
       config.container = slot2
       maxVolume = math.floor(slot2.getMaxVolume())
-      currentVolume = math.floor(slot2.getItemsVolume())         
+      currentVolume = math.floor(slot2.getItemsVolume()) 
       system.print('Storage connected Slot2')
       return true       
   end
@@ -66,18 +68,17 @@ function checkSlots(a, b)
               string.match(a.getClass(), "Screen") and
               string.match(b.getClass(), "Container"))
 end
+
 function render()
   local pureName = ores[Material]
-  if pureName == nil then
-      system.print("Invalid ore name")
-      return
-  end 
+
   local currentVolume=currentVolume 
   local volume = math.floor(currentVolume / 1000)
-  local percent = volume / maxVolume * 100000
+  local percent = currentVolume / maxVolume * 100
   system.print("Total Storage Size Is " ..maxVolume)
   system.print("You Are Using " ..currentVolume)
   system.print("Thats Exactly " ..percent.. " %")
+  system.print("Item ID " ..itemID.. " Loaded")
  local color
   if percent > 80 then
       color = "177/255,42/255,42/255"
@@ -98,6 +99,7 @@ function render()
   }
   config.screen.setRenderScript(interp(template, params))
 end
+
 function interp(s, tab)
   return (s:gsub('($%b{})', function(w) return tab[w:sub(3, -2)] or w end))
 end
