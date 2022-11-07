@@ -1,4 +1,5 @@
 template = [[
+-- DU-Locura-Storage-Info screen output
 json = require('dkjson')
 rx,ry = getResolution()
 x,borderSpacing=10,4
@@ -17,11 +18,14 @@ kindalarge=loadFont('Play', 100)
 kindasmall=loadFont('Play', 40)
 
 WallPaperIMG = loadImage(']]..WallPaper..[[')
+
 catName = string.upper('${Material}')
 KLVolume = '${volume}'
 LVolume = '${currentVolume}'
 percent = '${percent}'
-iconImage = loadImage('${pureName}')
+iconImage = loadImage(']]..itemIcn..[[')
+totalValue = ${currentVolume}*']]..oreValue..[['
+
 color = color
 
 JericoBar=]]..tostring(showJericoBar)..[[
@@ -30,8 +34,15 @@ KorKL=]]..tostring(showinKL)..[[
 
 UseWall=]]..tostring(UseWallpaper)..[[
 
+showValue=]]..tostring(showValue)..[[
+
+HideGitHub=]]..tostring(HideGitHub)..[[
+
+HideTier=]]..tostring(HideTier)..[[
+
+
 if UseWall then addImage(background,WallPaperIMG,0,0,rx,ry) 
-  else setBackgroundColor(]] .. BG_Color .. [[) end
+    else setBackgroundColor(]] .. BG_Color .. [[) end
 
 function drawDoubleLine(layer,x,y,rx,space)
     addLine(layer,x,y,rx-x,y)
@@ -51,44 +62,67 @@ function renderHeader(title)
     addLine(back,0,h+12,rx,h+12)
     addBox(front,0,12,rx,h)
     addText(front,smallBold,title,44,35)
-    addText(front,small,'v]] .. version .. [[',rx-100,35)
+    addText(front,small,'Locura Storage Info v]] .. version .. [[',rx-170,35)
 end
 
 if JericoBar == true then 
- renderHeader('Locura Storage Info')
+  if HideTier == false then 
+    renderHeader('T]]..itemTier..[[ ]]..itemName..[[')
+else
+    renderHeader(']]..itemName..[[')
+  end 
 end
 
-addImage(back,iconImage,370,80,250,250)
+if showValue == true then 
+    addImage(back,iconImage,120,80,250,250) 
+    setNextTextAlign(back,AlignH_Right,AlignV_Baseline)
+    addText(back,heading,totalValue,870,230)
+    setNextFillColor(back,51/255,60/255,74/255,1)
+    addText(back,kindasmall,'ħ',870,230)
+    setNextFillColor(back,51/255,60/255,74/255,1)
+    addText(back,kindasmall,'EST VALUE',660,170)
+else
+    addImage(back,iconImage,370,80,250,250)
+end
+
 addText(front,heading,catName,50,570)
 setDefaultStrokeColor(back,Shape_Line,1,1,1,0.5) 
 setDefaultStrokeWidth(back,Shape_Line,0.001) 
-drawDoubleLine(back,x,380,rx,borderSpacing)
+setNextFillColor(front,1,1,1,0.5)
+
+if HideGitHub == true then 
+    drawDoubleLine(back,x,380,rx,borderSpacing)
+else
+    drawDoubleLine(back,x,380,950,borderSpacing)
+    addText(front,subtext,'GITHUB/LOCURADU',945,385)
+end
+
 setNextFillColor(front,${color},1)
 setNextTextAlign(front,AlignH_Right,AlignV_Baseline)
 
 if KorKL == true then 
- addText(front,large,KLVolume,935,570)
+    addText(front,large,KLVolume,935,570)
 else
- addText(front,large,LVolume,960,570)
+    addText(front,large,LVolume,960,570)
 end
 
 setNextFillColor(front,51/255,60/255,74/255,1)
 
 if KorKL == true then 
- addText(front,kindasmall,'KL',930,570)
+    addText(front,kindasmall,'KL',930,570)
 else
- addText(front,kindasmall,'L',955,570)
+    addText(front,kindasmall,'L',955,570)
 end
 
 setDefaultFillColor(back,Shape_Box,0.075,0.125,0.156,1)
 setDefaultFillColor(front,Shape_Box,${color},1)
 function renderProgressBar(percent)      
-        local w=(rx-2-from_side*2)*('${percent}')/100
-        local x=from_side
-        local y=400
-        local h=75
-        addBox(back,x,y,rx-from_side*2,h)
-        addBox(front,x+1,y+1,w,h-2)
+    local w=(rx-2-from_side*2)*('${percent}')/100
+    local x=from_side
+    local y=400
+    local h=75
+    addBox(back,x,y,rx-from_side*2,h)
+    addBox(front,x+1,y+1,w,h-2)
 end
 renderProgressBar()
 ]]
