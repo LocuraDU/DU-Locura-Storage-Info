@@ -35,15 +35,6 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 # Edit Code
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
-# Current Parameter Options
-- Material
-- Background Color
-- Wallpaper URL
-- Use Wallpaper
-- Hide Screen Widget
-- Show/Hide JericoBar
-- Use "L" or "KL"
-
 # Screen And Sign Compatibility
 :blue_square: Not Tested :green_square: Working :yellow_square: Partially Works Without Edits :red_square: Not Working Without Edits
 > **Note**
