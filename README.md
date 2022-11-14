@@ -36,58 +36,13 @@ Display for T1-T5 ores, minerals, general storage, and gasses. Will show the ico
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
 # Current Parameter Options
-- Material ( See "Item Compatibility" )
+- Material
 - Background Color
 - Wallpaper URL
 - Use Wallpaper
 - Hide Screen Widget
 - Show/Hide JericoBar
 - Use "L" or "KL"
-
-# Item Compatibility
-- :green_square: Storage (Shows Container Icon For General Use)
-- :green_square: Bauxite
-- :green_square: Aluminium
-- :green_square: Coal
-- :green_square: Carbon
-- :green_square: Hematite
-- :green_square: Iron
-- :green_square: Quartz
-- :green_square: Silicon
-- :green_square: Chromite
-- :green_square: Chromium
-- :green_square: Limestone
-- :green_square: Calcium
-- :green_square: Malachite
-- :green_square: Copper
-- :green_square: Natron
-- :green_square: Sodium
-- :green_square: Acanthite
-- :green_square: Silver
-- :green_square: Garnierite
-- :green_square: Nickel
-- :green_square: Petalite
-- :green_square: Lithium
-- :green_square: Pyrite
-- :green_square: Sulfur
-- :green_square: Cobaltite
-- :green_square: Cobalt
-- :green_square: Cryolite
-- :green_square: Fluorine
-- :green_square: GoldNuggets
-- :green_square: Gold
-- :green_square: Kolbeckite
-- :green_square: Scandium
-- :green_square: Columbite
-- :green_square: Niobium
-- :green_square: Ilmenite
-- :green_square: Titanium
-- :green_square: Rhodonite
-- :green_square: Manganese
-- :green_square: Vanadinite
-- :green_square: Vanadium
-- :green_square: Hydrogen
-- :green_square: Oxygen
 
 # Screen And Sign Compatibility
 :blue_square: Not Tested :green_square: Working :yellow_square: Partially Works Without Edits :red_square: Not Working Without Edits
