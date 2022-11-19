@@ -26,12 +26,11 @@
 # Preview
 ![v2.0](img/DULSI2Banner.png)
 
-| First Header  | Second Header |
+| v2.1  | v2.2 |
 | ------------- | ------------- |
-| ![v2.1](img/2.1pre.png)  | ![v2.2](img/2.1pre.png)  |
-| Content Cell  | Content Cell  |
+| ![v2.1](img/2.1pre.png)  | ![v2.2](img/v2.2.0.png)  |
+| New options for v2.1| v2.2 brings support for 5 displays and 5 different containers all from one board |
 
-![v2.1](img/2.1pre.png)
 
 # Installation / Documentation / Wiki
 [![](https://img.shields.io/badge/Wiki-Changelog-yellow?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Changelog)
