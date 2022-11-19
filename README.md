@@ -25,6 +25,12 @@
 
 # Preview
 ![v2.0](img/DULSI2Banner.png)
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| ![v2.1](img/2.1pre.png)  | ![v2.2](img/2.1pre.png)  |
+| Content Cell  | Content Cell  |
+
 ![v2.1](img/2.1pre.png)
 
 # Installation / Documentation / Wiki
