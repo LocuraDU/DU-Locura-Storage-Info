@@ -2,7 +2,7 @@
 :---: | :---
 
 # Information
- Display for single items in containers/hubs. Can also be used for multi item containers/hubs if you're not using the "Items Left" option. The script doesn't need to adhere to NQ's 30-second refresh rules and can be refreshed at any time. Great for uses like industrial, or even sales signs for shops. Many options for functions, and styles to make the plugin match your aesthetic. All in all an amazing easy to use script for all your container data needs. Now supports up to 5 diffrent screens, and containers all from one board.
+ Display for single items in containers/hubs. Can also be used for multi item containers/hubs if you're not using the "Items Left" option. The script doesn't need to adhere to NQ's 30-second refresh rules and can be refreshed at any time. Great for uses like industrial, or even sales signs for shops. Many options for functions, and styles to make the plugin match your aesthetic. All in all an amazing easy to use script for all your container data needs. Now supports up to 5 diffrent screens, and containers all from one board. 
 
 [![](https://img.shields.io/badge/DU-1.0.11-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/CODE-LUA-purple?style=for-the-badge&logo=lua)](#)
