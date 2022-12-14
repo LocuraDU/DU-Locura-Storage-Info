@@ -23,10 +23,10 @@ catName = string.upper('${Material}')
 KLVolume = '${volume}'
 LVolume = '${currentVolume}'
 percent = '${percent}'
-iconImage = loadImage(']]..itemIcn..[[')
-totalValue = ${currentVolume}*']]..oreValue..[['
-
-color = color
+iconImage = loadImage('${itemIcn}')
+counting = '${COUNT}'
+totalValue = ${COUNT}*'${value}'
+maxitems = '${MAX}'
 
 JericoBar=]]..tostring(showJericoBar)..[[
 
@@ -40,6 +40,11 @@ HideGitHub=]]..tostring(HideGitHub)..[[
 
 HideTier=]]..tostring(HideTier)..[[
 
+showCount=]]..tostring(showCount)..[[
+
+showTotal=]]..tostring(showTotal)..[[
+
+color = color
 
 if UseWall then addImage(background,WallPaperIMG,0,0,rx,ry) 
     else setBackgroundColor(]] .. BG_Color .. [[) end
@@ -67,13 +72,13 @@ end
 
 if JericoBar == true then 
   if HideTier == false then 
-    renderHeader('T]]..itemTier..[[ ]]..itemName..[[')
+    renderHeader(string.upper('T${itemTier} ${itemName}'))
 else
-    renderHeader(']]..itemName..[[')
+    renderHeader(string.upper('${itemName}'))
   end 
 end
 
-if showValue == true then 
+if showValue == true then
     addImage(back,iconImage,120,80,250,250) 
     setNextTextAlign(back,AlignH_Right,AlignV_Baseline)
     addText(back,heading,totalValue,870,230)
@@ -81,6 +86,15 @@ if showValue == true then
     addText(back,kindasmall,'ħ',870,230)
     setNextFillColor(back,51/255,60/255,74/255,1)
     addText(back,kindasmall,'EST VALUE',660,170)
+elseif showCount == true then
+    addImage(back,iconImage,120,80,250,250) 
+    setNextTextAlign(back,AlignH_Right,AlignV_Baseline)
+    addText(back,heading,counting,870,230)
+    setNextFillColor(back,51/255,60/255,74/255,1)
+    addText(back,kindasmall,'ITEMS LEFT',660,170)
+    setNextFillColor(back,51/255,60/255,74/255,1)
+    setNextTextAlign(back,AlignH_Right,AlignV_Baseline)
+    addText(back,small,'- of ' ..maxitems,870,245)
 else
     addImage(back,iconImage,370,80,250,250)
 end
@@ -101,9 +115,17 @@ setNextFillColor(front,${color},1)
 setNextTextAlign(front,AlignH_Right,AlignV_Baseline)
 
 if KorKL == true then 
+  if showTotal == true then 
+    addText(front,large,KLVolume.."/"..math.floor(${maxVolume}/1000),935,570)
+  else   
     addText(front,large,KLVolume,935,570)
+  end  
 else
+  if showTotal == true then
+    addText(front,large,LVolume.."/${maxVolume}",960,570)
+  else
     addText(front,large,LVolume,960,570)
+  end
 end
 
 setNextFillColor(front,51/255,60/255,74/255,1)
