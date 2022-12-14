@@ -1,8 +1,7 @@
 -- DU-Locura-Storage-Info
--- Information / Updates / Downloads: GitHub/LocuraDU 
--- Code: GitHub/LocuraDU & GitHub/brendonh
--- Design: GitHub/LocuraDU & GitHub/Jericho1060
--- Info: LocuraDU is a mod hub for many games by GitHub/CredenceHamby
+-- GitHub/LocuraDU For Information / Updates / Downloads 
+-- Script Credits: GitHub/CredenceHamby & Discord/Arcto Lupus
+-- Other Credits: GitHub/Jericho1060 & GitHub/brendonh
 -- Built using the wonderful tools at https://du-lua.dev/
 -- Love With Your Heart, Use Your Head For Everything Else - Captain Disillusion
 
@@ -14,26 +13,29 @@ system.print("----------------------------------------")
 if HideUnit then unit.hideWidget() end
 
 config = {}
-function configure()
-  if checkSlots(slot1, slot2) then
-      config.screen = slot1
-      config.container = slot2
-      maxVolume = math.floor(slot2.getMaxVolume())
-      currentVolume = math.floor(slot2.getItemsVolume()) 
-      system.print('Storage connected Slot2')
+function configure(a,b,c,d)
+  if checkSlots(a, b) then
+      config.screen = a
+      config.container = b
+      maxVolume = math.floor(b.getMaxVolume())
+      currentVolume = math.floor(b.getItemsVolume()) 
+      system.print('Storage connected to ' .. d)
+      a.activate()
       return true       
   end
 
-  if checkSlots(slot2, slot1) then
-      config.screen = slot2  
-      config.container = slot1
-      maxVolume = math.floor(slot1.getMaxVolume())
-      currentVolume = math.floor(slot1.getItemsVolume())
-      system.print('Storage connected Slot1')       
+  if checkSlots(b, a) then
+      config.screen = b  
+      config.container = a
+      maxVolume = math.floor(a.getMaxVolume())
+      currentVolume = math.floor(a.getItemsVolume())
+      --system.print('Storage connected ' .. c)  
+      b.activate()
+      nameGroup = c
       return true
   end
-    system.print('No Container or Hub dectected')
-    unit.exit()
+    system.print(c..' No Container or Hub dectected')
+    --unit.exit() (note: need to fix this at some point/Or remove it)
   return false
 end
 
@@ -69,41 +71,78 @@ function checkSlots(a, b)
               string.match(b.getClass(), "Container"))
 end
 
-function render()
-  local pureName = ores[Material]
-
+function render(PAIRITEM,PAIRMAT,VAL)
+  --local pureName=ores[PAIRMAT] (note: will remove later)
+  local thingid=system.getItem(PAIRITEM)
   local currentVolume=currentVolume 
-  local volume = math.floor(currentVolume / 1000)
-  local percent = currentVolume / maxVolume * 100
-  system.print("Total Storage Size Is " ..maxVolume)
-  system.print("You Are Using " ..currentVolume)
-  system.print("Thats Exactly " ..percent.. " %")
-  system.print("Item ID " ..itemID.. " Loaded")
- local color
-  if percent > 80 then
-      color = "177/255,42/255,42/255"
-  elseif percent > 70 then
-      color = "255/255,128/255,0/255"      
-  elseif percent > 60 then
-      color = "249/255,212/255,123/255"
-  else
-      color = "34/255,177/255,76/255"
-  end
+  local volume=math.floor(currentVolume / 1000)
+  local percent=currentVolume / maxVolume * 100
+  local percentSmall=math.floor(percent) 
+  local COUNT=math.ceil(currentVolume / thingid.unitVolume)
+  local MAX=math.ceil(maxVolume / thingid.unitVolume)
+  --system.print("Total Storage Size Is " ..maxVolume)
+  --system.print("You Are Using " ..currentVolume)
+  --system.print("Thats Exactly " ..percent.. "%")
+  --system.print("Item ID " ..PAIRITEM.. " Loaded")
+  --system.print("There are " ..COUNT.. " Remaining")  
+  system.print(""..nameGroup.." TOTAL:"..maxVolume.." | USED:"..currentVolume.." | PERC:"..percentSmall.."% | INV:"..COUNT.." ("..PAIRITEM..")")  
+local color
+    if ReverseRGB == true then 
+        if percent > 80 then
+        color = "177/255,42/255,42/255"
+        elseif percent > 70 then
+        color = "255/255,128/255,0/255"      
+        elseif percent > 60 then
+        color = "249/255,212/255,123/255"
+        else
+        color = "34/255,177/255,76/255"
+       end
+    else
+    if percent > 80 then
+        color = "34/255,177/255,76/255"
+    elseif percent > 70 then
+        color = "249/255,212/255,123/255"      
+    elseif percent > 60 then
+        color = "255/255,128/255,0/255"
+    else
+        color = "177/255,42/255,42/255"
+    end
+end
   local params = {
       pureName=pureName,
-      Material=Material,
+      Material=PAIRMAT,
       volume=volume,
       percent=percent,
       color=color,
-      currentVolume=currentVolume
+      currentVolume=currentVolume,
+      maxVolume = maxVolume,
+      itemIcn = thingid.iconPath,
+      itemName = thingid.displayNameWithSize,
+      itemType = thingid.name,
+      itemTier = thingid.tier,
+      value = VAL,
+      COUNT = COUNT,
+      MAX = MAX
   }
-  config.screen.setRenderScript(interp(template, params))
+  config.screen.setRenderScript(interp(template,params))
 end
 
 function interp(s, tab)
   return (s:gsub('($%b{})', function(w) return tab[w:sub(3, -2)] or w end))
 end
 
-if configure() then
-  render()
+if configure(slot1,slot2,"Slot1","Slot2") then
+  render(itemID,Material,Value)
+end
+if configure(slot3,slot4,"Slot3","Slot4") then
+  render(itemID2,Material2,Value2)
+end
+if configure(slot5,slot6,"Slot5","Slot6") then
+  render(itemID3,Material3,Value3)
+end
+if configure(slot7,slot8,"Slot7","Slot8") then
+  render(itemID4,Material4,Value4)
+end
+if configure(slot9,slot10,"Slot9","Slot10") then
+  render(itemID5,Material5,Value5)
 end
