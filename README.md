@@ -41,25 +41,17 @@
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
 # Screen And Sign Compatibility
-:blue_square: Not Tested :green_square: Working :yellow_square: Partially Works Without Edits :red_square: Not Working Without Edits
-> **Note**
-> Please post in Discussions if you can confirm a screen or sign.
-- :green_square: Screens
-- :green_square: Modern Screens
-- :green_square: Transparent Screens
-- :green_square: Modern Transparent Screens
-- :blue_square: Signs
-- :blue_square: Vertical Signs
+[![](https://img.shields.io/badge/Wiki-Screen%20And%20Sign%20Compatibility-informational?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Screen-And-Sign-Compatibility)
 
 # Ways To Help
 - Contribute new code, or updating whats already here
 - Donate for Dr Pepper funds at Venmo @terranbytes
 - Join or start a discussion on the discussions tab
 
-# In Game
-- CredenceH (Dual Universe)
-- Locura (Dual Universe)
-- NoobTheory (Dual Universe)
+# Contacts
+- Credence (Dual Universe)
+- Credence#1983 (Discord)
+- CredenceHamby (GitHub)
 
 # Other
 > **Note**
