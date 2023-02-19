@@ -7,7 +7,7 @@
 [![](https://img.shields.io/badge/DU-1.2.X-green?style=for-the-badge&logo=steam)](https://store.steampowered.com/app/2000270/Dual_Universe/)
 [![](https://img.shields.io/badge/CODE-LUA-purple?style=for-the-badge&logo=lua)](#)
 [![](https://img.shields.io/badge/Maintained-YES-green?style=for-the-badge)](#)
-[![](https://img.shields.io/badge/VERSION-v2.3-green?style=for-the-badge)](#)
+[![](https://img.shields.io/badge/VERSION-v2.4-green?style=for-the-badge)](#)
 ![](https://komarev.com/ghpvc/?username=DU-Locura-Storage-Info&style=for-the-badge)
 ---
 [![](https://img.shields.io/github/issues/locuradu/DU-Locura-Storage-Info?style=flat-square&label=ISSUES)](#)
