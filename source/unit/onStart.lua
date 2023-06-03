@@ -8,34 +8,23 @@
 system.print("----------------------------------------")
 system.print("DU-Locura-Storage-Info version " .. version)
 system.print("GitHub/LocuraDU")
+system.print("NexusMods/DualUniverse")
 system.print("----------------------------------------")
 
 if HideUnit then unit.hideWidget() end
-
 config = {}
 function configure(a,b,c,d)
-  if checkSlots(a, b) then
-      config.screen = a
-      config.container = b
-      maxVolume = math.floor(b.getMaxVolume())
-      currentVolume = math.floor(b.getItemsVolume()) 
-      system.print('Storage connected to ' .. d)
-      a.activate()
-      return true       
-  end
-
-  if checkSlots(b, a) then
+  if checkSlots(b,a) then
       config.screen = b  
       config.container = a
-      maxVolume = math.floor(a.getMaxVolume())
+      CONTVolume = math.floor(a.getMaxVolume())
       currentVolume = math.floor(a.getItemsVolume())
-      --system.print('Storage connected ' .. c)  
+      cargoMass = math.floor(a.getItemsMass()) 
       b.activate()
       nameGroup = c
       return true
   end
     system.print(c..' No Container or Hub dectected')
-    --unit.exit() (note: need to fix this at some point/Or remove it)
   return false
 end
 
@@ -71,23 +60,19 @@ function checkSlots(a, b)
               string.match(b.getClass(), "Container"))
 end
 
-function render(PAIRITEM,PAIRMAT,VAL)
-  --local pureName=ores[PAIRMAT] (note: will remove later)
-  local thingid=system.getItem(PAIRITEM)
-  local currentVolume=currentVolume 
-  local volume=math.floor(currentVolume / 1000)
-  local percent=currentVolume / maxVolume * 100
-  local percentSmall=math.floor(percent) 
-  local COUNT=math.ceil(currentVolume / thingid.unitVolume)
-  local MAX=math.ceil(maxVolume / thingid.unitVolume)
-  --system.print("Total Storage Size Is " ..maxVolume)
-  --system.print("You Are Using " ..currentVolume)
-  --system.print("Thats Exactly " ..percent.. "%")
-  --system.print("Item ID " ..PAIRITEM.. " Loaded")
-  --system.print("There are " ..COUNT.. " Remaining")  
-  system.print(""..nameGroup.." TOTAL:"..maxVolume.." | USED:"..currentVolume.." | PERC:"..percentSmall.."% | INV:"..COUNT.." ("..PAIRITEM..")")  
-local color
-    if ReverseRGB == true then 
+function render(PAIRITEM,PAIRMAT,VAL,BGColor,RRGB,CONTS)
+  if AutoContainer == true then maxVolume  = CONTVolume    
+   else maxVolume = CONTS end
+  local thingid = system.getItem(PAIRITEM)
+  local currentVolume = currentVolume 
+  local volume = math.floor(currentVolume / 1000)
+  local percent = currentVolume / maxVolume * 100
+  local percentSmall = math.floor(percent) 
+  local COUNT = math.ceil(currentVolume / thingid.unitVolume)
+  local MAX = math.ceil(maxVolume / thingid.unitVolume)
+  local cargoMass = cargoMass / 1000 
+ system.print(""..nameGroup.." TOTAL:"..maxVolume.." | USED:"..currentVolume.." | PERC:"..percentSmall.."% | INV:"..COUNT.." ("..cargoMass.."t)")  
+    if RRGB == true then 
         if percent > 80 then
         color = "177/255,42/255,42/255"
         elseif percent > 70 then
@@ -109,17 +94,20 @@ local color
     end
 end
   local params = {
-      pureName=pureName,
-      Material=PAIRMAT,
-      volume=volume,
-      percent=percent,
-      color=color,
-      currentVolume=currentVolume,
+      pureName = pureName,
+      Material = PAIRMAT,
+      BGColor = BGColor,
+      ContMax = CONTS,
+      RGBC = RRGB,
+      volume = volume,
+      percent = percent,
+      currentVolume = currentVolume,
       maxVolume = maxVolume,
       itemIcn = thingid.iconPath,
       itemName = thingid.displayNameWithSize,
       itemType = thingid.name,
       itemTier = thingid.tier,
+      color = color,
       value = VAL,
       COUNT = COUNT,
       MAX = MAX
@@ -132,17 +120,17 @@ function interp(s, tab)
 end
 
 if configure(slot1,slot2,"Slot1","Slot2") then
-  render(itemID,Material,Value)
+  render(itemID,Material,Value,BG_Color,ReverseRGB,ContSize)
 end
 if configure(slot3,slot4,"Slot3","Slot4") then
-  render(itemID2,Material2,Value2)
+  render(itemID2,Material2,Value2,BG_Color2,ReverseRGB2,ContSize2)
 end
 if configure(slot5,slot6,"Slot5","Slot6") then
-  render(itemID3,Material3,Value3)
+  render(itemID3,Material3,Value3,BG_Color3,ReverseRGB3,ContSize3)
 end
 if configure(slot7,slot8,"Slot7","Slot8") then
-  render(itemID4,Material4,Value4)
+  render(itemID4,Material4,Value4,BG_Color4,ReverseRGB4,ContSize4)
 end
 if configure(slot9,slot10,"Slot9","Slot10") then
-  render(itemID5,Material5,Value5)
+  render(itemID5,Material5,Value5,BG_Color5,ReverseRGB5,ContSize5)
 end
