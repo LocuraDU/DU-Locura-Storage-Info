@@ -37,6 +37,9 @@
 [![](https://img.shields.io/badge/Wiki-Installation-informational?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Installation)
 [![](https://img.shields.io/badge/Wiki-Usage-informational?style=for-the-badge)](https://github.com/LocuraDU/DU-Locura-Storage-Info/wiki/Usage)
 
+:heavy_exclamation_mark: | If you are hooking the script to "HUB's" that came from a blueprint you will need to uncheck "AutoContainer" mode as there is a bug on dynamic properties from HUBs that are placed from blueprints. It seems not related to Lua but to element dynamic property. I will share it to server guys - NQ-Ligo
+:---: | :---
+
 # Edit Code
 [![](https://img.shields.io/badge/EDIT_CODE-DU--DEV.Dev-informational?style=for-the-badge)](https://du-lua.dev/#/editor/github/LocuraDU/DU-Locura-Storage-Info)
 
