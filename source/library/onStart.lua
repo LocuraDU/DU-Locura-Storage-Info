@@ -17,9 +17,8 @@ large=loadFont('Play', 60)
 kindalarge=loadFont('Play', 100)
 kindasmall=loadFont('Play', 40)
 
-WallPaperIMG = loadImage(']]..WallPaper..[[')
-
 catName = string.upper('${Material}')
+BGColor = '${BG_Color}'
 KLVolume = '${volume}'
 LVolume = '${currentVolume}'
 percent = '${percent}'
@@ -44,10 +43,10 @@ showCount=]]..tostring(showCount)..[[
 
 showTotal=]]..tostring(showTotal)..[[
 
-color = color
+WallPaperIMG = loadImage(']]..WallPaper..[[')
 
 if UseWall then addImage(background,WallPaperIMG,0,0,rx,ry) 
-    else setBackgroundColor(]] .. BG_Color .. [[) end
+    else setBackgroundColor( ${BGColor} ) end
 
 function drawDoubleLine(layer,x,y,rx,space)
     addLine(layer,x,y,rx-x,y)
